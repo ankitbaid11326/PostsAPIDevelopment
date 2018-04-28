@@ -1,0 +1,8 @@
+{
+  "name": "Posts APIs",
+  "description": "A Simple Node.js API where you can create account, Upload posts and DeletePosts and Like Posts",
+  "repository": "https://github.com/ankitbaid11326/PostsAPIDevelopment",
+  "logo": "",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}

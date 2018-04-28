@@ -1,0 +1,48 @@
+{
+  "name": "node-api-development",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev:build": "yarn run clean && webpack -w --mode production",
+    "dev": "cross-env NODE_ENV=production nodemon dist/index.bundle.js",
+    "prettier": "prettier --single-quote --print-width 80 --trailing-comma all --write 'src/**/*.js'"
+  },
+  "author": "Ankit Baid",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.2",
+    "cross-env": "^5.1.3",
+    "express": "^4.16.2",
+    "express-validation": "^1.0.2",
+    "helmet": "^3.12.0",
+    "http-status": "^1.0.1",
+    "joi": "^13.2.0",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^5.0.15",
+    "mongoose-unique-validator": "^2.0.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^2.2.1",
+    "passport-local": "^1.0.0",
+    "slug": "^0.9.1",
+    "validator": "^9.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint-config-equimper": "^2.2.2",
+    "eslint-config-prettier": "^2.9.0",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.1",
+    "prettier": "^1.12.1",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.15",
+    "webpack-node-externals": "^1.6.0"
+  }
+}
